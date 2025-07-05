@@ -1,4 +1,4 @@
-# 💼 HireSync - Plataforma de Oportunidades para Candidatos e Empresas
+# 💼 HireSync - Temos Vagas
 
 <img src="https://i.imgur.com/Ap53ZQA.png" alt="Página inicial do HireSync" width="800" />
 
