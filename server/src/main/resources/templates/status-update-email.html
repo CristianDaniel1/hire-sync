@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualização da Sua Candidatura</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+      body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        line-height: 1.6;
+        color: #444;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f7fa;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background: linear-gradient(135deg, #182542, #3730a3);
+        padding: 30px 24px;
+        color: white;
+        text-align: center;
+      }
+      .color-1 {
+        color: #182542;
+      }
+      .color-2 {
+        color: #3730a3;
+      }
+      .header h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .content {
+        padding: 30px;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo img {
+        max-width: 180px;
+      }
+      h3 {
+        color: #2c3e50;
+        margin-top: 0;
+        font-size: 20px;
+      }
+      .status-card {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 25px 0;
+        text-align: center;
+        border-top: 4px solid #3498db;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .status-label {
+        font-size: 14px;
+        color: #7f8c8d;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+      .status-value {
+        font-size: 22px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 10px 0;
+      }
+      .job-info {
+        background-color: #f8f9fa;
+        padding: 16px;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+      .job-info p {
+        margin: 8px 0;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #7f8c8d;
+        background-color: #f5f7fa;
+        border-top: 1px solid #eee;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+        margin: 20px 0;
+      }
+      .text-primary {
+        color: #3498db;
+      }
+      .text-muted {
+        color: #95a5a6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Atualização da Sua Candidatura</h2>
+      </div>
+
+      <div class="content">
+        <div class="logo">
+          <div style="font-size: 24px; font-weight: 700; color: #2c3e50">
+            <span class="color-1">Hire</span><span class="color-2">Sync</span>
+          </div>
+        </div>
+
+        <h3>Olá, <span class="text-primary">{{CANDIDATE_NAME}}</span>!</h3>
+
+        <div class="job-info">
+          <p><strong>Vaga:</strong> {{JOB_TITLE}}</p>
+          <p><strong>Empresa:</strong> {{COMPANY_NAME}}</p>
+          <p><strong>Data da candidatura:</strong> {{APPLICATION_DATE}}</p>
+        </div>
+
+        <div class="status-card">
+          <div class="status-label">Status atual</div>
+          <div class="status-value">{{APPLICATION_STATUS}}</div>
+          <p class="text-muted">Atualizado em {{UPDATE_DATE}}</p>
+        </div>
+
+        <p>
+          Fique atento ao seu e-mail para possíveis próximos passos no processo
+          seletivo.
+        </p>
+
+        <p>
+          Se tiver dúvidas sobre o processo, não hesite em entrar em contato
+          conosco.
+        </p>
+
+        <p style="margin-top: 30px">
+          Atenciosamente,<br />
+          <strong>Equipe HireSync</strong>
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>© 2025 HireSync. Todos os direitos reservados.</p>
+        <p>Este é um e-mail automático, por favor não responda.</p>
+        <p style="margin-top: 10px">
+          <a href="#" style="color: #3498db; text-decoration: none"
+            >Política de Privacidade</a
+          >
+          |
+          <a href="#" style="color: #3498db; text-decoration: none"
+            >Central de Ajuda</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

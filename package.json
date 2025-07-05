@@ -1,0 +1,11 @@
+{
+  "name": "hire-sync",
+  "version": "1.0.0",
+  "description": "Projeto HireSync",
+  "main": "index.js",
+  "scripts": {
+    "dev:front": "cd server && npm install && npm run dev"
+  },
+  "author": "Cristian Daniel e Thiago Santana",
+  "license": "MIT"
+}
